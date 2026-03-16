@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Se você usar este software, por favor cite-o conforme abaixo."
+type: software
+title: "PrevIA: Assistente de Medicina Preventiva baseado em RAG"
+abstract: >
+  Sistema agêntico de medicina preventiva que usa RAG (Retrieval-Augmented
+  Generation) com LangGraph para consultar diretrizes públicas do Ministério
+  da Saúde, INCA e OMS, gerando respostas com citações e planos preventivos
+  personalizados com mecanismo anti-alucinação e integração MCP.
+authors:
+  - family-names: "Farias"
+    given-names: "Leila"
+repository-code: "https://github.com/leilafarias/previa"
+license: MIT
+date-released: "2025-03-15"
+keywords:
+  - medicina preventiva
+  - RAG
+  - LangGraph
+  - LangChain
+  - MCP
+  - saúde
+  - inteligência artificial
+  - NLP

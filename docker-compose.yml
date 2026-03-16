@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  previa:
+    build: .
+    image: previa:latest
+    container_name: previa-app
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persiste o modelo Ollama entre reinicializações
+      - ollama_data:/root/.ollama
+      # Persiste o índice FAISS entre reinicializações
+      - ./previa/faiss_db:/app/previa/faiss_db
+    environment:
+      - OLLAMA_HOST=localhost
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

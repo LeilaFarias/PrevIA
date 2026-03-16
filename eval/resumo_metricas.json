@@ -1,0 +1,9 @@
+{
+  "metodologia": "RAGAS-compatible (Qwen2.5 7B local)",
+  "n_perguntas": 20,
+  "faithfulness": 0.588,
+  "answer_relevancy": 0.83,
+  "context_precision": 0.645,
+  "context_recall": 0.52,
+  "latencia_media_s": 10.89
+}
