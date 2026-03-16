@@ -243,20 +243,20 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap');
 
 html, body, [class*="css"] {
     font-family: "Inter", sans-serif;
-    background-color: #0d1117 !important;
-    color: #e6edf3 !important;
+    background-color: #080c14 !important;
+    color: #c9d1d9 !important;
 }
 
-.stApp { background: #0d1117 !important; }
+.stApp { background: #080c14 !important; }
 
 /* ── Hero ── */
 .hero {
-    background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-    border: 1px solid #30363d;
+    background: #0d1526;
+    border: 1px solid #1e3a5f;
     border-radius: 16px;
     padding: 2.5rem 3rem;
     margin-bottom: 2rem;
@@ -266,9 +266,9 @@ html, body, [class*="css"] {
 .hero::before {
     content: '';
     position: absolute;
-    top: -60px; right: -60px;
-    width: 200px; height: 200px;
-    background: radial-gradient(circle, rgba(35,134,54,0.15) 0%, transparent 70%);
+    top: -80px; right: -80px;
+    width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(30,100,180,0.18) 0%, transparent 70%);
     pointer-events: none;
 }
 .hero-eyebrow {
@@ -277,21 +277,21 @@ html, body, [class*="css"] {
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #3fb950;
+    color: #58a6ff;
     margin-bottom: 0.6rem;
 }
 .hero-titulo {
-    font-family: "Syne", sans-serif;
-    font-size: 3.2rem;
-    font-weight: 800;
-    color: #f0f6fc;
+    font-family: "DM Serif Display", serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #e6edf3;
     margin: 0;
     line-height: 1;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.5px;
 }
 .hero-titulo em {
-    font-style: normal;
-    color: #3fb950;
+    font-style: italic;
+    color: #58a6ff;
 }
 .hero-desc {
     color: #8b949e;
@@ -307,8 +307,8 @@ html, body, [class*="css"] {
     margin-top: 1.2rem;
 }
 .tag {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #0d1526;
+    border: 1px solid #1e3a5f;
     color: #8b949e;
     font-size: 0.7rem;
     font-weight: 500;
@@ -316,16 +316,16 @@ html, body, [class*="css"] {
     border-radius: 20px;
     letter-spacing: 0.5px;
 }
-.tag.green {
-    border-color: #238636;
-    color: #3fb950;
-    background: rgba(35,134,54,0.1);
+.tag.blue {
+    border-color: #1f6feb;
+    color: #58a6ff;
+    background: rgba(31,111,235,0.1);
 }
 
 /* ── Tabs ── */
 .stTabs [data-baseweb="tab-list"] {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #0d1526 !important;
+    border: 1px solid #1e3a5f !important;
     border-radius: 10px !important;
     padding: 4px !important;
     gap: 4px !important;
@@ -338,41 +338,41 @@ html, body, [class*="css"] {
     font-size: 0.88rem !important;
 }
 .stTabs [aria-selected="true"] {
-    background: #238636 !important;
+    background: #1f6feb !important;
     color: #f0f6fc !important;
 }
 
 /* ── Inputs ── */
 .stTextInput > div > div > input,
 .stTextArea > div > div > textarea {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #0d1526 !important;
+    border: 1px solid #1e3a5f !important;
     border-radius: 8px !important;
-    color: #e6edf3 !important;
+    color: #c9d1d9 !important;
     font-family: "Inter", sans-serif !important;
     font-size: 0.92rem !important;
 }
 .stTextInput > div > div > input:focus,
 .stTextArea > div > div > textarea:focus {
-    border-color: #238636 !important;
-    box-shadow: 0 0 0 3px rgba(35,134,54,0.2) !important;
+    border-color: #1f6feb !important;
+    box-shadow: 0 0 0 3px rgba(31,111,235,0.2) !important;
 }
 .stTextInput > div > div > input::placeholder {
-    color: #484f58 !important;
+    color: #3d4f6e !important;
 }
 
 /* ── Selectbox / Number ── */
 .stSelectbox > div > div,
 .stNumberInput > div > div > input {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #0d1526 !important;
+    border: 1px solid #1e3a5f !important;
     border-radius: 8px !important;
-    color: #e6edf3 !important;
+    color: #c9d1d9 !important;
 }
 
 /* ── Botões ── */
 .stButton > button[kind="primary"] {
-    background: #238636 !important;
+    background: #1f6feb !important;
     color: #f0f6fc !important;
     border: none !important;
     border-radius: 8px !important;
@@ -383,22 +383,22 @@ html, body, [class*="css"] {
     transition: background 0.2s !important;
 }
 .stButton > button[kind="primary"]:hover {
-    background: #2ea043 !important;
+    background: #388bfd !important;
 }
 
 /* ── Cards ── */
 .card {
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #0d1526;
+    border: 1px solid #1e3a5f;
     border-radius: 12px;
     padding: 1.6rem 2rem;
     margin-top: 1.2rem;
     font-size: 0.92rem;
-    color: #e6edf3;
+    color: #c9d1d9;
     line-height: 1.8;
 }
-.card.green-accent {
-    border-left: 3px solid #238636;
+.card.blue-accent {
+    border-left: 3px solid #1f6feb;
 }
 .card.info {
     font-size: 0.83rem;
@@ -409,12 +409,12 @@ html, body, [class*="css"] {
 
 /* ── Aviso ── */
 .aviso {
-    background: rgba(35,134,54,0.08);
-    border: 1px solid #238636;
+    background: rgba(31,111,235,0.08);
+    border: 1px solid #1f6feb;
     border-radius: 8px;
     padding: 0.8rem 1.2rem;
     font-size: 0.8rem;
-    color: #7ee787;
+    color: #79c0ff;
     margin-top: 1rem;
     line-height: 1.5;
 }
@@ -422,12 +422,12 @@ html, body, [class*="css"] {
 /* ── Pills de fonte ── */
 .fonte-pill {
     display: inline-block;
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #0d1526;
+    border: 1px solid #1e3a5f;
     border-radius: 20px;
     padding: 3px 10px;
     font-size: 0.72rem;
-    color: #3fb950;
+    color: #58a6ff;
     font-weight: 500;
     margin: 3px 3px 0 0;
     font-family: "Inter", monospace;
@@ -439,19 +439,17 @@ html, body, [class*="css"] {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #484f58;
+    color: #3d4f6e;
     margin-bottom: 4px;
 }
 
 /* ── Spinner ── */
-.stSpinner > div {
-    border-top-color: #238636 !important;
-}
+.stSpinner > div { border-top-color: #1f6feb !important; }
 
 /* ── Expander ── */
 div[data-testid="stExpander"] {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #0d1526 !important;
+    border: 1px solid #1e3a5f !important;
     border-radius: 10px !important;
 }
 div[data-testid="stExpander"] summary {
@@ -459,15 +457,14 @@ div[data-testid="stExpander"] summary {
     font-size: 0.83rem !important;
 }
 
-/* ── Warning ── */
+/* ── Warning / Alert ── */
 .stAlert {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #0d1526 !important;
+    border: 1px solid #1e3a5f !important;
     border-radius: 8px !important;
     color: #8b949e !important;
 }
 
-/* Labels dos widgets */
 label, .stSelectbox label, .stNumberInput label {
     color: #8b949e !important;
     font-size: 0.83rem !important;
@@ -486,8 +483,8 @@ st.markdown("""
     com citações e verificação anti-alucinação.
   </div>
   <div class="hero-tags">
-    <span class="tag green">RAG + LangGraph</span>
-    <span class="tag green">MCP health-checklist</span>
+    <span class="tag blue">RAG + LangGraph</span>
+    <span class="tag blue">MCP health-checklist</span>
     <span class="tag">Ministério da Saúde</span>
     <span class="tag">INCA</span>
     <span class="tag">OMS</span>
@@ -497,6 +494,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# ── Tabs
 # ── Tabs ────────────────────────────────────────────────────
 aba1, aba2 = st.tabs(["💬  Perguntas", "📋  Plano Preventivo"])
 
@@ -521,13 +519,13 @@ with aba1:
     with col_side:
         st.markdown("""
         <div class="card info">
-        <div style="color:#3fb950;font-size:0.72rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.7rem;">Pipeline</div>
+        <div style="color:#58a6ff;font-size:0.72rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.7rem;">Pipeline</div>
         <div style="line-height:2;">
-        <span style="color:#238636">①</span> Supervisor<br>
-        <span style="color:#238636">②</span> Retriever<br>
-        <span style="color:#238636">③</span> Writer<br>
-        <span style="color:#238636">④</span> Self-check<br>
-        <span style="color:#238636">⑤</span> Safety
+        <span style="color:#1f6feb">①</span> Supervisor<br>
+        <span style="color:#1f6feb">②</span> Retriever<br>
+        <span style="color:#1f6feb">③</span> Writer<br>
+        <span style="color:#1f6feb">④</span> Self-check<br>
+        <span style="color:#1f6feb">⑤</span> Safety
         </div>
         </div>
         """, unsafe_allow_html=True)
@@ -546,7 +544,7 @@ with aba1:
             resposta_txt = partes[0].strip()
             aviso_txt    = partes[1].strip() if len(partes) > 1 else ""
 
-            st.markdown(f'<div class="card green-accent">{resposta_txt}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="card blue-accent">{resposta_txt}</div>', unsafe_allow_html=True)
             if aviso_txt:
                 st.markdown(f'<div class="aviso">{aviso_txt}</div>', unsafe_allow_html=True)
 
