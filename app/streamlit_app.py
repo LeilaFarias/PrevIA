@@ -62,7 +62,7 @@ FONTES: {fontes}""")
     return result.content
 
 # ── State ───────────────────────────────────────────────────
-DISCLAIMER = """\n---\n> ⚠️ **Aviso:** Informações educativas baseadas em diretrizes públicas do Ministério da Saúde e OMS. Não substitui consulta com profissional de saúde."""
+DISCLAIMER = "\n\n---\n> ⚠️ **Aviso:** Informações educativas baseadas em diretrizes públicas do Ministério da Saúde e OMS. Não substitui consulta com profissional de saúde."
 
 class PrevIAState(TypedDict):
     pergunta: str
@@ -232,194 +232,245 @@ def criar_grafo():
 app_graph = criar_grafo()
 
 # ════════════════════════════════════════════════════════════
-# UI — Design clínico-editorial
+# UI — Dark theme clínico
 # ════════════════════════════════════════════════════════════
-
-st.set_page_config(page_title="PrevIA", page_icon="🏥", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(
+    page_title="PrevIA",
+    page_icon="🏥",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500&display=swap');
 
-html, body, [class*="css"] { font-family: "DM Sans", sans-serif; }
+html, body, [class*="css"] {
+    font-family: "Inter", sans-serif;
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+}
 
-.stApp { background: #f5f2ed; }
+.stApp { background: #0d1117 !important; }
 
+/* ── Hero ── */
 .hero {
-    background: #0f2318;
-    margin: -4rem -4rem 2.5rem;
-    padding: 3rem 4rem 2.5rem;
-    border-bottom: 3px solid #2d7a50;
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
 }
-.hero-titulo {
-    font-family: "Playfair Display", serif;
-    font-size: 3rem;
-    color: #e8f0eb;
-    margin: 0;
-    letter-spacing: -1px;
-    line-height: 1.1;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(35,134,54,0.15) 0%, transparent 70%);
+    pointer-events: none;
 }
-.hero-titulo span { color: #4caf82; }
-.hero-sub {
-    color: #7aaa8e;
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    margin-top: 0.5rem;
-}
-.hero-badges { margin-top: 1.2rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.badge {
-    background: rgba(77,175,130,0.15);
-    border: 1px solid rgba(77,175,130,0.3);
-    color: #7aaa8e;
-    padding: 3px 10px;
-    border-radius: 20px;
+.hero-eyebrow {
+    font-family: "Inter", sans-serif;
     font-size: 0.72rem;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #3fb950;
+    margin-bottom: 0.6rem;
+}
+.hero-titulo {
+    font-family: "Syne", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #f0f6fc;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+.hero-titulo em {
+    font-style: normal;
+    color: #3fb950;
+}
+.hero-desc {
+    color: #8b949e;
+    font-size: 0.88rem;
+    margin-top: 0.8rem;
+    max-width: 520px;
+    line-height: 1.6;
+}
+.hero-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+.tag {
+    background: #161b22;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+.tag.green {
+    border-color: #238636;
+    color: #3fb950;
+    background: rgba(35,134,54,0.1);
 }
 
+/* ── Tabs ── */
 .stTabs [data-baseweb="tab-list"] {
-    background: white;
-    border: 1px solid #dde8e0;
-    border-radius: 10px;
-    padding: 4px;
-    gap: 4px;
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 10px !important;
+    padding: 4px !important;
+    gap: 4px !important;
 }
 .stTabs [data-baseweb="tab"] {
     border-radius: 7px !important;
-    font-family: "DM Sans", sans-serif !important;
+    font-family: "Inter", sans-serif !important;
     font-weight: 500 !important;
-    color: #6b8070 !important;
-    font-size: 0.9rem !important;
+    color: #8b949e !important;
+    font-size: 0.88rem !important;
 }
 .stTabs [aria-selected="true"] {
-    background: #0f2318 !important;
-    color: white !important;
+    background: #238636 !important;
+    color: #f0f6fc !important;
 }
 
+/* ── Inputs ── */
 .stTextInput > div > div > input,
 .stTextArea > div > div > textarea {
-    background: white !important;
-    border: 1.5px solid #dde8e0 !important;
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
     border-radius: 8px !important;
-    font-family: "DM Sans", sans-serif !important;
-    font-size: 0.95rem !important;
-    color: #1c2520 !important;
-    padding: 0.6rem 0.9rem !important;
+    color: #e6edf3 !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 0.92rem !important;
 }
 .stTextInput > div > div > input:focus,
 .stTextArea > div > div > textarea:focus {
-    border-color: #2d7a50 !important;
-    box-shadow: 0 0 0 3px rgba(45,122,80,0.12) !important;
+    border-color: #238636 !important;
+    box-shadow: 0 0 0 3px rgba(35,134,54,0.2) !important;
+}
+.stTextInput > div > div > input::placeholder {
+    color: #484f58 !important;
 }
 
+/* ── Selectbox / Number ── */
+.stSelectbox > div > div,
+.stNumberInput > div > div > input {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 8px !important;
+    color: #e6edf3 !important;
+}
+
+/* ── Botões ── */
 .stButton > button[kind="primary"] {
-    background: #0f2318 !important;
-    color: #e8f0eb !important;
+    background: #238636 !important;
+    color: #f0f6fc !important;
     border: none !important;
     border-radius: 8px !important;
-    font-family: "DM Sans", sans-serif !important;
+    font-family: "Inter", sans-serif !important;
     font-weight: 500 !important;
-    font-size: 0.9rem !important;
-    padding: 0.55rem 1.8rem !important;
+    font-size: 0.88rem !important;
+    padding: 0.55rem 1.6rem !important;
     transition: background 0.2s !important;
-    letter-spacing: 0.3px !important;
 }
 .stButton > button[kind="primary"]:hover {
-    background: #2d7a50 !important;
+    background: #2ea043 !important;
 }
 
-.stNumberInput > div > div > input,
-.stSelectbox > div > div {
-    background: white !important;
-    border: 1.5px solid #dde8e0 !important;
-    border-radius: 8px !important;
-    font-family: "DM Sans", sans-serif !important;
-}
-
-.label-field {
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #6b8070;
-    margin-bottom: 4px;
-}
-
-.card-resposta {
-    background: white;
-    border: 1px solid #dde8e0;
-    border-left: 4px solid #2d7a50;
+/* ── Cards ── */
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
     border-radius: 12px;
     padding: 1.6rem 2rem;
     margin-top: 1.2rem;
-    font-size: 0.95rem;
-    color: #1c2520;
+    font-size: 0.92rem;
+    color: #e6edf3;
     line-height: 1.8;
 }
-
-.card-plano {
-    background: white;
-    border: 1px solid #dde8e0;
-    border-radius: 12px;
-    padding: 1.8rem 2rem;
-    margin-top: 1.2rem;
-    font-size: 0.95rem;
-    color: #1c2520;
-    line-height: 1.8;
+.card.green-accent {
+    border-left: 3px solid #238636;
+}
+.card.info {
+    font-size: 0.83rem;
+    color: #8b949e;
+    line-height: 1.65;
+    padding: 1rem 1.4rem;
 }
 
+/* ── Aviso ── */
 .aviso {
-    background: #eef7f2;
-    border: 1px solid #b8ddc8;
+    background: rgba(35,134,54,0.08);
+    border: 1px solid #238636;
     border-radius: 8px;
     padding: 0.8rem 1.2rem;
-    font-size: 0.82rem;
-    color: #4a7060;
-    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: #7ee787;
+    margin-top: 1rem;
     line-height: 1.5;
 }
 
+/* ── Pills de fonte ── */
 .fonte-pill {
     display: inline-block;
-    background: #eef7f2;
-    border: 1px solid #b8ddc8;
+    background: #161b22;
+    border: 1px solid #30363d;
     border-radius: 20px;
-    padding: 3px 12px;
-    font-size: 0.75rem;
-    color: #2d7a50;
+    padding: 3px 10px;
+    font-size: 0.72rem;
+    color: #3fb950;
     font-weight: 500;
     margin: 3px 3px 0 0;
+    font-family: "Inter", monospace;
 }
 
-.perfil-card {
-    background: white;
-    border: 1px solid #dde8e0;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 1.2rem;
-}
-
-.step-badge {
-    background: #0f2318;
-    color: #4caf82;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+/* ── Label fields ── */
+.field-label {
     font-size: 0.72rem;
-    font-weight: 700;
-    margin-right: 6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #484f58;
+    margin-bottom: 4px;
 }
 
+/* ── Spinner ── */
+.stSpinner > div {
+    border-top-color: #238636 !important;
+}
+
+/* ── Expander ── */
 div[data-testid="stExpander"] {
-    background: white;
-    border: 1px solid #dde8e0 !important;
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
     border-radius: 10px !important;
+}
+div[data-testid="stExpander"] summary {
+    color: #8b949e !important;
+    font-size: 0.83rem !important;
+}
+
+/* ── Warning ── */
+.stAlert {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 8px !important;
+    color: #8b949e !important;
+}
+
+/* Labels dos widgets */
+label, .stSelectbox label, .stNumberInput label {
+    color: #8b949e !important;
+    font-size: 0.83rem !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -427,94 +478,86 @@ div[data-testid="stExpander"] {
 # ── Hero ────────────────────────────────────────────────────
 st.markdown("""
 <div class="hero">
-  <div class="hero-sub">Assistente de medicina preventiva</div>
-  <div class="hero-titulo">Prev<span>IA</span></div>
-  <div class="hero-badges">
-    <span class="badge">39 documentos indexados</span>
-    <span class="badge">Ministério da Saúde</span>
-    <span class="badge">OMS</span>
-    <span class="badge">INCA</span>
-    <span class="badge">LangGraph + RAG</span>
-    <span class="badge">MCP health-checklist</span>
+  <div class="hero-eyebrow">Assistente de medicina preventiva</div>
+  <div class="hero-titulo">Prev<em>IA</em></div>
+  <div class="hero-desc">
+    Consulta 39 diretrizes públicas do Ministério da Saúde, INCA e OMS
+    para responder perguntas sobre prevenção e gerar planos personalizados —
+    com citações e verificação anti-alucinação.
+  </div>
+  <div class="hero-tags">
+    <span class="tag green">RAG + LangGraph</span>
+    <span class="tag green">MCP health-checklist</span>
+    <span class="tag">Ministério da Saúde</span>
+    <span class="tag">INCA</span>
+    <span class="tag">OMS</span>
+    <span class="tag">Qwen2.5 7B local</span>
+    <span class="tag">39 documentos</span>
   </div>
 </div>
 """, unsafe_allow_html=True)
 
 # ── Tabs ────────────────────────────────────────────────────
-aba1, aba2 = st.tabs(["💬  Perguntas  ", "📋  Plano Preventivo  "])
+aba1, aba2 = st.tabs(["💬  Perguntas", "📋  Plano Preventivo"])
 
 # ══════════════════════════════
 # ABA 1 — Q&A
 # ══════════════════════════════
 with aba1:
     st.markdown("<br>", unsafe_allow_html=True)
-    col_input, col_info = st.columns([3, 1])
 
-    with col_input:
-        st.markdown('<div class="label-field">Sua pergunta</div>', unsafe_allow_html=True)
-        pergunta = st.text_input("", placeholder="Ex: A partir de qual idade devo fazer mamografia?",
-            label_visibility="collapsed", key="input_qa")
-        col_btn, _ = st.columns([1, 3])
+    col_main, col_side = st.columns([3, 1], gap="large")
+
+    with col_main:
+        st.markdown('<div class="field-label">Sua pergunta</div>', unsafe_allow_html=True)
+        pergunta = st.text_input(
+            "", placeholder="Ex: A partir de qual idade devo fazer mamografia?",
+            label_visibility="collapsed", key="input_qa"
+        )
+        col_btn, _ = st.columns([1, 4])
         with col_btn:
             perguntar = st.button("Perguntar →", type="primary", key="btn_qa", use_container_width=True)
 
-    with col_info:
+    with col_side:
         st.markdown("""
-        <div style="background:white;border:1px solid #dde8e0;border-radius:10px;padding:1rem 1.2rem;font-size:0.8rem;color:#6b8070;line-height:1.7;">
-        <strong style="color:#0f2318;font-size:0.82rem;">Como funciona</strong><br><br>
-        <span style="color:#2d7a50">①</span> Supervisor classifica<br>
-        <span style="color:#2d7a50">②</span> Retriever busca docs<br>
-        <span style="color:#2d7a50">③</span> Writer gera resposta<br>
-        <span style="color:#2d7a50">④</span> Self-check valida<br>
-        <span style="color:#2d7a50">⑤</span> Safety adiciona aviso
+        <div class="card info">
+        <div style="color:#3fb950;font-size:0.72rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.7rem;">Pipeline</div>
+        <div style="line-height:2;">
+        <span style="color:#238636">①</span> Supervisor<br>
+        <span style="color:#238636">②</span> Retriever<br>
+        <span style="color:#238636">③</span> Writer<br>
+        <span style="color:#238636">④</span> Self-check<br>
+        <span style="color:#238636">⑤</span> Safety
+        </div>
         </div>
         """, unsafe_allow_html=True)
 
     if perguntar:
         if pergunta.strip():
-            with st.status("🔍 Processando sua pergunta...", expanded=True) as status:
-                st.write("🧭 Analisando intenção...")
-                estado = {"pergunta": pergunta, "perfil": None, "rota": "",
+            with st.spinner("Consultando diretrizes..."):
+                estado = {
+                    "pergunta": pergunta, "perfil": None, "rota": "",
                     "documentos": [], "resposta": "", "check_ok": False,
-                    "tentativas": 0, "resposta_final": ""}
-                estado = supervisor(estado)
-                st.write(f"✅ Rota: **{estado['rota'].upper()}**")
-                st.write("📚 Buscando nos documentos...")
-                estado = retriever_agent(estado)
-                fontes_set = list({d.metadata.get("source_file","?") for d in estado["documentos"]})
-                st.write(f"✅ {len(estado['documentos'])} trechos em {len(fontes_set)} documentos")
-                st.write("✍️ Gerando resposta com citações...")
-                estado = writer_agent(estado)
-                st.write("🔍 Verificando anti-alucinação...")
-                estado = self_check(estado)
-                if not estado["check_ok"] and estado["tentativas"] < 2:
-                    st.write("⚠️ Re-buscando evidências...")
-                    estado = retriever_agent(estado)
-                    estado = writer_agent(estado)
-                    estado = self_check(estado)
-                if estado["check_ok"]:
-                    estado = safety_agent(estado)
-                else:
-                    estado = recusar(estado)
-                status.update(label="✅ Resposta pronta!", state="complete", expanded=False)
+                    "tentativas": 0, "resposta_final": ""
+                }
+                resultado = app_graph.invoke(estado)
 
-            partes = estado["resposta_final"].split("---")
+            partes = resultado["resposta_final"].split("---")
             resposta_txt = partes[0].strip()
-            aviso_txt = partes[1].strip() if len(partes) > 1 else ""
+            aviso_txt    = partes[1].strip() if len(partes) > 1 else ""
 
-            st.markdown(f'<div class="card-resposta">{resposta_txt}</div>', unsafe_allow_html=True)
-
+            st.markdown(f'<div class="card green-accent">{resposta_txt}</div>', unsafe_allow_html=True)
             if aviso_txt:
                 st.markdown(f'<div class="aviso">{aviso_txt}</div>', unsafe_allow_html=True)
 
-            if estado.get("documentos"):
-                with st.expander("📄 Ver fontes consultadas"):
+            if resultado.get("documentos"):
+                with st.expander("📄 Fontes consultadas"):
                     fontes_html = ""
                     vistos = set()
-                    for doc in estado["documentos"]:
-                        src = doc.metadata.get("source_file","?")
-                        pag = doc.metadata.get("page","?")
-                        chave = f"{src} pág.{pag}"
+                    for doc in resultado["documentos"]:
+                        src   = doc.metadata.get("source_file", "?")
+                        pag   = doc.metadata.get("page", "?")
+                        chave = f"{src}_{pag}"
                         if chave not in vistos:
                             fontes_html += f'<span class="fonte-pill">{src} — pág.{pag}</span>'
                             vistos.add(chave)
@@ -529,79 +572,86 @@ with aba2:
     st.markdown("<br>", unsafe_allow_html=True)
 
     st.markdown("""
-    <div style="background:white;border:1px solid #dde8e0;border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:1.5rem;font-size:0.85rem;color:#4a7060;line-height:1.6;">
+    <div class="card info" style="margin-bottom:1.5rem;margin-top:0;">
     Preencha seu perfil e o PrevIA consultará as diretrizes do Ministério da Saúde, INCA e OMS
-    para gerar um plano preventivo anual personalizado — com exames, vacinas, hábitos e cronograma.
+    para gerar um plano preventivo anual com exames, vacinas, hábitos e cronograma personalizado.
     </div>
     """, unsafe_allow_html=True)
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="large")
+
     with col1:
-        st.markdown('<div class="label-field">Idade</div>', unsafe_allow_html=True)
-        idade = st.number_input("", min_value=1, max_value=110, value=35,
-            label_visibility="collapsed", key="inp_idade")
-        st.markdown('<div class="label-field" style="margin-top:1rem;">Sexo</div>', unsafe_allow_html=True)
-        sexo = st.selectbox("", ["feminino", "masculino"],
-            label_visibility="collapsed", key="inp_sexo")
+        st.markdown('<div class="field-label">Idade</div>', unsafe_allow_html=True)
+        idade = st.number_input(
+            "", min_value=1, max_value=110, value=35,
+            label_visibility="collapsed", key="inp_idade"
+        )
+        st.markdown('<div class="field-label" style="margin-top:1rem;">Sexo</div>', unsafe_allow_html=True)
+        sexo = st.selectbox(
+            "", ["feminino", "masculino"],
+            label_visibility="collapsed", key="inp_sexo"
+        )
+
     with col2:
-        st.markdown('<div class="label-field">Histórico familiar</div>', unsafe_allow_html=True)
-        historico = st.text_input("", placeholder="Ex: diabetes, hipertensão, câncer de mama",
-            label_visibility="collapsed", key="inp_hist")
-        st.markdown('<div class="label-field" style="margin-top:1rem;">Condições atuais</div>', unsafe_allow_html=True)
-        condicoes = st.text_input("", placeholder="Ex: sedentário, fumante, gestante",
-            label_visibility="collapsed", key="inp_cond")
+        st.markdown('<div class="field-label">Histórico familiar</div>', unsafe_allow_html=True)
+        historico = st.text_input(
+            "", placeholder="Ex: diabetes, hipertensão, câncer de mama",
+            label_visibility="collapsed", key="inp_hist"
+        )
+        st.markdown('<div class="field-label" style="margin-top:1rem;">Condições atuais</div>', unsafe_allow_html=True)
+        condicoes = st.text_input(
+            "", placeholder="Ex: sedentário, fumante, gestante",
+            label_visibility="collapsed", key="inp_cond"
+        )
 
     st.markdown("<br>", unsafe_allow_html=True)
-    col_btn2, _ = st.columns([1, 3])
+    col_btn2, _ = st.columns([1, 4])
     with col_btn2:
-        gerar = st.button("🤖  Gerar Plano Preventivo", type="primary", key="btn_plano", use_container_width=True)
+        gerar = st.button("Gerar Plano →", type="primary", key="btn_plano", use_container_width=True)
 
     if gerar:
         perfil = {
-            "idade": idade, "sexo": sexo,
+            "idade":    idade,
+            "sexo":     sexo,
             "historico": historico or "nenhum",
-            "condicoes": condicoes or "nenhuma"
+            "condicoes": condicoes or "nenhuma",
         }
-        with st.status("⏳ Gerando seu plano preventivo...", expanded=True) as status:
-            st.write(f"👤 Perfil: {idade} anos, {sexo}, histórico: {historico or 'nenhum'}")
-            st.write("🔧 Chamando MCP health-checklist...")
+        with st.spinner("Gerando seu plano preventivo..."):
             estado = {
                 "pergunta": "Gere meu plano preventivo anual personalizado",
                 "perfil": perfil, "rota": "automacao", "documentos": [],
                 "resposta": "", "check_ok": False, "tentativas": 0, "resposta_final": ""
             }
-            estado = automation_agent(estado)
-            st.write(f"✅ {len(estado['documentos'])} documentos consultados")
-            st.write("🛡️ Adicionando disclaimer médico...")
-            estado = safety_agent(estado)
-            status.update(label="✅ Plano gerado!", state="complete", expanded=False)
+            resultado = app_graph.invoke(estado)
 
-        partes = estado["resposta_final"].split("---")
+        partes    = resultado["resposta_final"].split("---")
         plano_txt = partes[0].strip()
         aviso_txt = partes[1].strip() if len(partes) > 1 else ""
 
-        st.markdown(f'<div class="card-plano">{plano_txt}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="card">{plano_txt}</div>', unsafe_allow_html=True)
         if aviso_txt:
             st.markdown(f'<div class="aviso">{aviso_txt}</div>', unsafe_allow_html=True)
 
-        col_exp1, col_exp2 = st.columns(2)
-        with col_exp1:
+        col_e1, col_e2 = st.columns(2)
+        with col_e1:
             with st.expander("📄 Documentos consultados"):
-                vistos = set()
-                fontes_html = ""
-                for doc in estado["documentos"]:
-                    src = doc.metadata.get("source_file","?")
-                    pag = doc.metadata.get("page","?")
+                vistos, fontes_html = set(), ""
+                for doc in resultado["documentos"]:
+                    src   = doc.metadata.get("source_file", "?")
+                    pag   = doc.metadata.get("page", "?")
                     chave = f"{src}_{pag}"
                     if chave not in vistos:
                         fontes_html += f'<span class="fonte-pill">{src} — pág.{pag}</span>'
                         vistos.add(chave)
                 st.markdown(fontes_html, unsafe_allow_html=True)
-        with col_exp2:
+        with col_e2:
             with st.expander("📋 Log de auditoria MCP"):
                 try:
                     with open("/content/previa/mcp_audit.log") as f:
                         conteudo = f.read()
-                    st.code(conteudo[-2000:] if len(conteudo) > 2000 else conteudo, language="text")
-                except:
+                    st.code(
+                        conteudo[-2000:] if len(conteudo) > 2000 else conteudo,
+                        language="text"
+                    )
+                except Exception:
                     st.write("Log vazio.")
