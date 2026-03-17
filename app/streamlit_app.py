@@ -21,7 +21,7 @@ if not logger.handlers:
 @st.cache_resource
 def carregar_recursos():
     embeddings = HuggingFaceEmbeddings(
-        model_name="neuralmind/bert-base-portuguese-cased",
+        model_name="BAAI/bge-small-en-v1.5",
         model_kwargs={"device": "cpu"},
         encode_kwargs={"normalize_embeddings": True}
     )
