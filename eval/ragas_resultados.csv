@@ -1,176 +1,155 @@
 pergunta,resposta_sistema,resposta_esperada,faithfulness,answer_relevancy,context_precision,context_recall,latencia_s
-A partir de qual idade a mamografia é recomendada para rastreamento?,"A partir dos 50 anos é recomendada a realização de mamografia bianual para rastreamento do câncer de mama. No entanto, a decisão de iniciar o rastreamento antes dessa idade deve ser individualizada, levando em consideração o contexto da paciente e os benefícios e malefícitos associados.
+A partir de qual idade a mamografia é recomendada para rastreamento?,"A mamografia para rastreamento é recomendada para mulheres entre 50 e 74 anos a cada dois anos no Brasil.
 
-Para mulheres com risco elevado, não há recomendações padrão, sendo recomendável que elas conversem com um médico para avaliação do risco e conduta apropriada. O SUS não impede o acesso à mamografia de rastreamento para mulheres antes dos 50 anos, embora isso não seja uma prática geral.
+[Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.12; ExamesPreventivos.pdf, pag.8]",mulheres de 40 a 49 anos podem fazer mamografia sob demanda,0.9,1.0,0.8,0.0,4.65
+Com que frequência devo fazer o exame de Papanicolau?,"De acordo com as diretrizes brasileiras, a frequência recomendada para o exame de Papanicolau (também conhecido como teste de Papanicolau ou exame citopatológico) é inicialmente uma vez ao ano em mulheres entre 25 e 59 anos. No caso de dois resultados normais seguidos, a recomendação é realizar o exame a cada três anos.
 
-Fontes: [Trecho 8 - rastreamento_cap29.pdf, pag.71] [Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.12]",mulheres de 40 a 49 anos podem fazer mamografia sob demanda,0.8,1.0,0.8,0.8,7.43
-Com que frequência devo fazer o exame de Papanicolau?,"De acordo com os trechos fornecidos, a frequência recomendada para o exame de Papanicolau (também conhecido como teste citopatológico) é:
+[Fonte: Cartilha - Exames Preventivos do Câncer de Colo do Útero, pag.7; ExamesPreventivos.pdf, pag.10]","O exame de Papanicolau deve ser feito a cada 3 anos após dois exames normais consecutivos, para mulheres de 25 a 64 anos.",0.0,1.0,0.8,0.8,6.93
+Quais são os fatores de risco para câncer do colo do útero?,"Nao encontrei informações específicas sobre os fatores de risco para o câncer do colo do útero nos trechos fornecidos.
 
-- Para mulheres com vida sexual ativa entre 25 e 59 anos: após dois exames normais consecutivos no intervalo de um ano, a periodicidade indicada do exame é de três anos. [Fonte: Cartilha-da-saude-da-mulher-2.pdf, pag.5; situacao_cancer_brasil.pdf, pag.4]
+No entanto, posso informar que alguns dos trechos discutem o câncer do colo do útero e sua prevalência no Brasil. Segundo [Trecho 1 - promocao_saude_prevencao_riscos_doencas.pdf, pag.104], foram registrados 19.260 novos casos de câncer do colo do útero no Brasil em 2006.
 
-- Para mulheres com até 20 anos e Lesão Intraepitelial de Baixo Grau (LSIL): repetir o exame citopatológico a cada 6 a 12 meses. [Fonte: rastreamento_cancer_colo_utero.pdf, pag.69]
+[Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.104]
 
-- Para casos em que há alterações colposcópicas ou resultados suspeitos: repetir o exame citopatológico a cada 3 meses até obter dois exames consecutivos normais. [Fonte: rastreamento_cancer_colo_utero.pdf, pag.77]
+Para obter informações mais detalhadas sobre os fatores de risco específicos para o câncer do colo do útero, recomendo consultar fontes médicas especializadas ou relatórios oficiais da Sociedade Brasileira de Ginecologia e Obstetrícia (SBGO) ou do Instituto Nacional de Câncer (INCA).","Os principais fatores de risco são infecção pelo HPV, múltiplos parceiros sexuais, tabagismo e imunossupressão.",0.8,0.0,0.8,0.8,10.72
+O rastreamento de câncer de mama é recomendado para mulheres com histórico familiar?,"Sim, o rastreamento de câncer de mama é recomendado para mulheres com histórico familiar de câncer de mama. Segundo os trechos fornecidos, a presença de um histórico familiar aumenta o risco de desenvolver a doença e justifica a realização de exames preventivos mais frequentes.
 
-- Para casos com novo resultado normal após LSIL: repetir o exame citopatológico em 6 meses (ou 12 meses se a mulher tiver menos de 30 anos) e, se os dois exames consecutivos forem normais, passar para rastreio trienal. [Fonte: rastreamento_cancer_colo_utero.pdf, pag.47]
+Fonte: [Cartilha Saúde da Mulher.pdf, pag. 4]
 
-- Para rastreio contínuo após lesão suspeita: realizar citopatológico endocervical semestral por dois anos e anual após este período. [Fonte: rastreamento_cancer_colo_utero.pdf, pag.80]
+É importante notar que as recomendações específicas para mulheres com alto risco (como aqueles com histórico familiar) podem incluir mamografias mais frequentes ou outras modalidades de exame, além das orientações gerais para a população em geral.
 
-É importante ressaltar que essas recomendações podem variar dependendo das diretrizes locais e do histórico de saúde individual da paciente. Sempre consulte um profissional médico para orientações personalizadas.","O exame de Papanicolau deve ser feito a cada 3 anos após dois exames normais consecutivos, para mulheres de 25 a 64 anos.",0.0,1.0,0.8,0.0,15.39
-Quais são os fatores de risco para câncer do colo do útero?,"Não encontrei informações específicas sobre os fatores de risco para o câncer do colo do útero nos trechos fornecidos. Os trechos apresentados parecem tratar principalmente de outros tipos de câncer, como câncer de mama e próstata, além de abordar aspectos relacionados ao rastreamento e exames preventivos.
+Fonte: [Cartilha Cancer Mama 2025_web_161025.pdf, pag. 4]","Sim, mulheres com histórico familiar de câncer de mama devem iniciar o rastreamento mais cedo e com maior frequência.",0.8,1.0,0.8,0.8,7.79
+Quais hábitos ajudam a prevenir doenças cardiovasculares?,"Os hábitos saudáveis são cruciais para a prevenção das doenças cardiovasculares e contribuem para o controle de diversos fatores associados a essas condições, como o metabolismo de lipídios e glicose, pressão arterial, qualidade de vida e redução dos custos nos sistemas de saúde. [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.57]
 
-Se você puder fornecer mais trechos específicos sobre o câncer do colo do útero ou se tiver alguma outra fonte que possa ajudar a responder à sua pergunta, ficarei feliz em auxiliar novamente.","Os principais fatores de risco são infecção pelo HPV, múltiplos parceiros sexuais, tabagismo e imunossupressão.",0.0,0.0,0.8,0.0,5.15
-O rastreamento de câncer de mama é recomendado para mulheres com histórico familiar?,"Sim, o rastreamento de câncer de mama é recomendado para mulheres com histórico familiar. De acordo com a cartilha ""Cartilha_Cancer_Mama_2025_web_161025"", as mulheres com risco elevado para câncer de mama devem ser orientadas sobre o rastreamento preventivo.
+É importante estimular a adoção de hábitos saudáveis desde a infância, levando em consideração as características regionais, culturais, sociais e econômicas dos indivíduos. [Fonte: hipertensao_cab37.pdf, pag.37]
 
-Fonte: [Cartilha_Cancer_Mama_2025_web_161025.pdf, pag. 4]","Sim, mulheres com histórico familiar de câncer de mama devem iniciar o rastreamento mais cedo e com maior frequência.",0.8,1.0,0.6,0.8,4.45
-Quais hábitos ajudam a prevenir doenças cardiovasculares?,"Hábitos saudáveis que podem ajudar a prevenir doenças cardiovasculares incluem:
+Pessoas que não iniciam medicamento podem adotar hábitos saudáveis para atingir a meta por um período de três a seis meses, com o objetivo de reduzir a pressão arterial e mortalidade cardiovascular. [Fonte: hipertensao_cab37.pdf, pag.58]
 
-1. **Atividade Física Regular**: A prática de exercícios físicos pode ser crucial para reduzir o risco de doenças cardiovasculares, contribuindo para uma melhor saúde geral. [Fonte: hipertensao_cab37.pdf, pag.99]
+A prevenção primária da Hipertensão Arterial Sistêmica (HAS) envolve o estímulo à adoção de hábitos saudáveis de vida. [Fonte: hipertensao_cab37.pdf, pag.37]
 
-2. **Alimentação Saudável**: Modificações na alimentação podem auxiliar no controle do peso e da glicemia, além de reduzir o risco de doenças cardiovasculares. É importante evitar alimentos industrializados ricos em gorduras saturadas, sódio e açúcares. [Fonte: Cartilha hábitos saudáveis.pdf, pag.6]
+É fundamental que a orientação sobre alimentação saudável seja incluída no conjunto de ações de promoção de saúde e prevenção dos agravos das doenças cardiovasculares, especialmente no âmbito da Atenção Básica. [Fonte: doencas_cronicas_cab35.pdf, pag.62]
 
-3. **Controle do Tabagismo**: O fumo é um dos maiores fatores de risco para doenças cardiovasculares, pois pode acelerar a progressão da aterosclerose e suas complicações. [Fonte: hipertensao_cab37.pdf, pag.37]
+Embora os trechos não mencionem especificamente idades ou frequências, é claro que há uma ênfase na prevenção ao longo da vida e no controle contínuos desses fatores de risco.","Prática regular de atividade física, alimentação saudável, não fumar e controle do peso reduzem o risco cardiovascular.",0.9,0.8,0.8,0.8,18.25
+Com que frequência devo medir a pressão arterial?,"Nas instruções fornecidas, não há informações específicas sobre a frequência recomendada para medir a pressão arterial. No entanto, alguns trechos abordam aspectos relacionados à medida da pressão arterial:
 
-4. **Controle do Índice de Massa Corporal (IMC)**: A obesidade é um fator de risco importante para doenças cardiovasculares. Homens com cintura abdominal acima de 102 cm e mulheres acima de 88 cm têm maior risco. [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.49]
+- Para realizar o diagnóstico de hipertensão arterial, é recomendado que se obtenham duas ou mais aferições em pelo menos duas ou mais visitas ao longo de um período de uma ou mais semanas. [Fonte: rastreamento_cap29.pdf, pag.50]
 
-5. **Prática Regular de Exames Preventivos**: Embora não seja diretamente relacionado a doenças cardiovasculares, é importante realizar exames preventivos para detectar outras condições que possam aumentar o risco, como câncer de próstata e outros tipos de câncer. [Fonte: ExamesPreventivos.pdf, pag.6]
+- A melhor forma de identificar a hipertensão é medir com frequência a pressão arterial. [Fonte: cartilha-sobre-cuidados-com-hipertensao-arterial-sistemica-has-em-idosos.pdf, pag.10]
 
-Estes hábitos devem ser incorporados desde a infância, levando em consideração as características regionais, culturais, sociais e econômicas dos indivíduos. [Fonte: hipertensao_cab37.pdf, pag.37]","Prática regular de atividade física, alimentação saudável, não fumar e controle do peso reduzem o risco cardiovascular.",0.8,1.0,0.8,0.8,15.61
-Com que frequência devo medir a pressão arterial?,"De acordo com os trechos fornecidos, a frequência recomendada para medir a pressão arterial pode variar dependendo do contexto e do risco de hipertensão. No entanto, há algumas orientações gerais:
+Portanto, embora não seja especificada uma frequência exata, esses trechos sugerem que a medida da pressão arterial deve ser realizada com regularidade e em diferentes ocasiões para um diagnóstico preciso.
 
-1. **Para indivíduos saudáveis**: A pressão arterial deve ser medida anualmente.
-   - [Fonte: hipertensao_cab37.pdf, pag. 32]
+Fonte: [hipertensao_cab37.pdf, pag.50; cartilha-sobre-cuidados-com-hipertensao-arterial-sistemica-has-em-idosos.pdf, pag.10]","A pressão arterial deve ser medida ao menos uma vez por ano em adultos, e com mais frequência em pessoas com hipertensão.",0.8,0.8,0.0,0.0,13.86
+Quais exames são recomendados para monitorar a hipertensão arterial?,"Não encontrei informações específicas sobre exames recomendados para monitorar a hipertensão arterial nos trechos fornecidos. No entanto, os trechos abordam aspectos relacionados à prática centrada na pessoa e ao envolvimento de usuários e cuidadores no controle da hipertensão.
 
-2. **Para pessoas com risco aumentado ou já diagnosticadas com hipertensão**: É recomendável medir a pressão arterial mais frequentemente para monitorar o controle da pressão.
-   - [Fonte: rastreamento_cap29.pdf, pag. 51]
-   - [Fonte: cartilha-sobre-cuidados-com-hipertensao-arterial-sistemica-has-em-idosos.pdf, pag. 10]
+[Fonte: hipertensao_cab37.pdf, pag. 21]
 
-3. **Para crianças e adolescentes**: A frequência de medição pode variar com base na idade e no percentil da pressão arterial.
-   - [Fonte: hipertensao_cab37.pdf, pag. 49]
-   - [Fonte: hipertensao_cab37.pdf, pag. 8]
-
-Portanto, para indivíduos saudáveis, a medida anual é suficiente, mas para aqueles com risco aumentado ou já diagnosticados com hipertensão, a frequência pode ser mais elevada.
-
-**Observação**: A medição ambulatorial de pressão arterial (esfigmomanômetro) é a mais amplamente utilizada e recomendada, especialmente em indivíduos com histórico de pressão alta.","A pressão arterial deve ser medida ao menos uma vez por ano em adultos, e com mais frequência em pessoas com hipertensão.",0.8,0.8,0.3,0.8,12.34
-Quais exames são recomendados para monitorar a hipertensão arterial?,"Os exames recomendados para monitorar a hipertensão arterial incluem:
-
-- Medição frequente da pressão arterial em adultos (acima de 18 anos) sem conhecimento prévio de serem hipertensos. [Fonte: rastreamento_cap29.pdf, pag.50]
-- Avaliação da glicemia e dos níveis de colesterol para detectar outros fatores que potencializam o risco cardiovascular da hipertensão. [Fonte: hipertensao_cab37.pdf, pag.47]
-
-Estas medidas são importantes para identificar a hipertensão e avaliar os riscos associados, contribuindo para uma intervenção clínica adequada.
-
-[Não foram encontradas informações específicas sobre exames adicionais como dosagem de hormônios ou outros testes no contexto fornecido.]","Exames como hemograma, creatinina, potássio, glicemia e ECG são recomendados para acompanhamento da hipertensão.",0.8,1.0,0.8,0.0,6.78
+Se você precisar de informações mais específicas sobre exames, sugiro consultar diretamente os guias oficiais ou recomendações atuais das sociedades médicas brasileiras, como a Sociedade Brasileira de Hipertensão (SBH).","Exames como hemograma, creatinina, potássio, glicemia e ECG são recomendados para acompanhamento da hipertensão.",0.8,0.0,0.6,0.0,7.36
 Atividade física é recomendada para prevenir doenças crônicas?,"Sim, a atividade física é recomendada para prevenir doenças crônicas.
 
-- **Doenças Cardiovasculares e Diabetes Mellitus (DM):** A prática regular de atividade física pode reduzir a incidência dessas condições. É recomendado pelo menos 30 minutos de atividade física, regular ou intensa ou moderada, na maioria dos dias da semana [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.22].
+[Trecho 2] recomenda que indivíduos de todas as idades incluam um mínimo de 30 minutos de atividade física de intensidade moderada (como caminhada) na maioria ou em todos os dias da semana. [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.51]
 
-- **Câncer de Mama:** Manter o peso corporal adequado e praticar atividade física podem ajudar a reduzir o risco de câncer de mama. A amamentação também é considerada um fator protetor [Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.9].
+[Trecho 6] sugere pelo menos 30 minutos de atividade física regular ou intensa ou moderada na maioria dos dias da semana para prevenir doenças cardiovasculares e diabetes mellitus, além de melhorar o estado funcional geral. [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.22]
 
-- **Envelhecimento Saudável:** Uma vida ativa melhora a saúde mental e frequentemente promove contatos sociais, podendo ajudar pessoas idosas a ficarem independentes o máximo possível pelo período de tempo mais longo [Fonte: Cartilha_envelhecimento_saudavel.pdf, pag.7].
+[Trecho 4] destaca que a prática regular de atividade física traz inúmeros benefícios para saúde e bem-estar, tanto para aptidão física quanto para saúde mental. [Fonte: CARTILHA OBESIDADE Versão D.pdf, pag.9]
 
-- **Hipertensão Arterial Sistêmica (HAS):** A atividade física regular pode ter um efeito preventivo importante na prevenção da HAS [Fonte: hipertensao_cab37.pdf, pag.99].
+Essas informações vêm de diferentes fontes e indicam consistentemente a importância da prática regular de atividade física na prevenção de doenças crônicas.","Sim, pelo menos 150 minutos de atividade física moderada por semana são recomendados para prevenção de doenças crônicas.",0.8,1.0,1.0,0.8,13.2
+O tabagismo está relacionado ao câncer do colo do útero?,"Encontrei informações relevantes relacionadas ao tabagismo e o câncer do colo do útero nos trechos fornecidos:
 
-Estes trechos indicam que a prática de atividade física é uma estratégia eficaz para prevenir diversas doenças crônicas, incluindo doenças cardiovasculares e diabetes, câncer de mama, além de promover o envelhecimento saudável e ajudar na prevenção da hipertensão arterial sistêmica.","Sim, pelo menos 150 minutos de atividade física moderada por semana são recomendados para prevenção de doenças crônicas.",0.85,1.0,0.8,0.8,13.39
-O tabagismo está relacionado ao câncer do colo do útero?,"Nao encontrei informações diretas sobre uma relação entre o tabagismo e o câncer do colo do útero nos trechos fornecidos.
+Não foi encontrada uma informação direta sobre a relação entre o tabagismo e o câncer do colo do útero nos trechos analisados. No entanto, há referências que indicam que o fumo é um fator de risco importante para diversos tipos de câncer, incluindo o câncer de pulmão.
 
-No entanto, os trechos abordam outros aspectos relacionados ao tabagismo, como seu impacto na saúde cardiovascular e no diabetes mellitus. Alguns trechos mencionam que a cessação do tabagismo pode reduzir riscos para doenças cardiovasculares em mulheres.
+Fonte: [promocao_saude_prevencao_riscos_doencas.pdf, pag.70]
 
-Fonte: [Trecho 1 - doencas_cronicas_cab35.pdf, pag.55]
-Fonte: [Trecho 9 - rastreamento_cap29.pdf, pag.52]","Sim, o tabagismo é um fator de risco independente para o câncer do colo do útero.",0.0,0.0,0.0,0.8,6.43
-Qual a faixa etária recomendada para rastreamento de câncer de mama?,"A faixa etária recomendada para o rastreamento de câncer de mama é entre 50 e 74 anos, sendo que as avaliações devem ser realizadas bianualmente. 
+Neste trecho, a fonte menciona que o consumo de tabaco é considerado o fator de risco mais importante para o desenvolvimento de câncer de pulmão e está relacionado a vários tipos de neoplasias (boca, laringe, pâncreas, rins e bexiga, além do colo do útero).
 
-Fonte: [parametros_rastreamento_cancer_mama.pdf, pag.12; rastreamento_cap29.pdf, pag.71]",é recomendado para mulheres de 50 a 74 anos.,0.8,1.0,0.95,0.8,3.65
-O que é rastreamento oportunístico de câncer?,"O rastreamento oportunístico de câncer refere-se à aplicação de um teste ou exame numa população assintomática e aparentemente saudável, com o objetivo de identificar lesões sugestivas de câncer e encaminhá-las para investigação e tratamento. Este tipo de rastreamento não é parte de um programa organizado e eficaz.
+Portanto, embora não haja uma menção direta ao câncer do colo do útero, pode-se inferir que o tabagismo é um fator de risco para diversos tipos de câncer, incluindo possivelmente o câncer do colo do útero.","Sim, o tabagismo é um fator de risco independente para o câncer do colo do útero.",0.8,0.8,0.3,0.8,13.92
+Qual a faixa etária recomendada para rastreamento de câncer de mama?,"Na faixa etária de 50 a 69 anos, é recomendado o rastreamento do câncer de mama. [Fonte: parametros_rastreamento_cancer_mama.pdf, pag.12]
 
-Fonte: [Cartilha saúde da mulher.pdf, pag. 8]","Rastreamento oportunístico ocorre quando o exame é realizado durante consultas por outros motivos, sem programa organizado.",0.0,1.0,0.0,0.0,4.44
-Quais são as diretrizes para alimentação saudável segundo o Ministério da Saúde?,"Não encontrei informações específicas sobre as diretrizes de alimentação saudável do Ministério da Saúde no texto fornecido. As referências são genéricas e não detalham os princípios ou recomendações oficiais para uma alimentação saudável.
+Não encontrei informações específicas sobre outras faixas etárias relevantes para o rastreamento do câncer de mama nos trechos fornecidos.",é recomendado para mulheres de 50 a 74 anos.,0.8,0.8,0.0,0.0,4.63
+O que é rastreamento oportunístico de câncer?,"O rastreamento oportunístico de câncer é uma estratégia que visa detectar o câncer em estágios mais precoces, geralmente através do uso de exames ou convites para participar de programas de detecção precoce. Este tipo de abordagem não segue um programa estruturado populacionalmente, mas sim oferece oportunidades individuais para a realização de exames preventivos.
 
-Fonte: [Trechos - doencas_cronicas_cab35.pdf, pag. 62-69; guia_alimentar_populacao_brasileira_2ed.pdf, pag. 7-8; promocao_saude_prevencao_riscos_doencas.pdf, pag. 19]","O Guia Alimentar recomenda preferir alimentos in natura, evitar ultraprocessados e fazer refeições regulares em família.",0.8,0.8,0.8,0.8,5.43
-Como o sedentarismo afeta a saúde?,"O sedentarismo afeta significativamente a saúde de várias maneiras, conforme evidenciado nos trechos fornecidos:
+Não encontrei informações específicas sobre idade, faixa etária ou frequência em relação ao rastreamento oportunístico no texto fornecido. No entanto, é mencionado que o rastreamento de câncer de colo uterino envolve convidar mulheres periodicamente a participar do programa através de agentes comunitários de saúde [Fonte: rastreamento_cap29.pdf, pag. 18].
 
-1. **Relação com Obesidade e Diabetes**: O sedentarismo está associado ao aumento do acúmulo de gordura corporal, o que pode levar à obesidade (Fonte: CARTILHA OBESIDADE VersãoD.pdf, pag.2). A obesidade é um fator de risco para diabetes tipo 2 e outras doenças crônicas (Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.8).
+É importante notar que o rastreamento oportunístico pode trazer mais problemas para os pacientes do que alívio do sofrimento, pois envolve a realização de exames em indivíduos assintomáticos [Fonte: rastreamento_cap29.pdf, pag. 16].
 
-2. **Riscos Cardiovasculares**: Um estilo de vida sedentário aumenta o risco de doenças cardiovasculares e mortes por essa causa (Fonte: hipertensao_cab37.pdf, pag.99). A prática regular de atividades físicas pode reduzir a incidência dessas condições (Fonte: ExamesPreventivos.pdf, pag.6).
+Referências:
+- [Trecho 1 - rastreamento_cap29.pdf, pag.77]
+- [Trecho 2 - situacao_cancer_brasil.pdf, pag.2]
+- [Trecho 3 - rastreamento_cap29.pdf, pag.18]
+- [Trecho 4 - rastreamento_cap29.pdf, pag.76]
+- [Trecho 5 - rastreamento_cap29.pdf, pag.75]
+- [Trecho 6 - ExamesPreventivos.pdf, pag.7]
+- [Trecho 7 - Cartilha saúde da mulher.pdf, pag.5]
+- [Trecho 8 - rastreamento_cap29.pdf, pag.16]","Rastreamento oportunístico ocorre quando o exame é realizado durante consultas por outros motivos, sem programa organizado.",0.85,1.0,0.8,0.8,18.6
+Quais são as diretrizes para alimentação saudável segundo o Ministério da Saúde?,"Não encontrei informações específicas sobre as diretrizes para alimentação saudável diretamente no texto fornecido. Os trechos mencionam o Guia Alimentar para a População Brasileira, mas não detalham os aspectos nutricionais ou dietéticos específicos.
 
-3. **Hipertensão**: O sedentarismo é um fator de risco para a hipertensão arterial (Fonte: CARTILHA OBESIDADE VersãoD.pdf, pag.2).
+Fonte: [Trecho 1 - guia_alimentar_populacao_brasileira_2ed.pdf, pag.6]","O Guia Alimentar recomenda preferir alimentos in natura, evitar ultraprocessados e fazer refeições regulares em família.",0.8,0.8,0.95,0.8,5.0
+Como o sedentarismo afeta a saúde?,"Não encontrei informações específicas sobre a idade ou faixa etária em nenhum dos trechos fornecidos. No entanto, posso resumir as informações relevantes sobre o impacto do sedentarismo na saúde:
 
-4. **Câncer de Mama**: A falta de atividade física está entre os fatores de risco para o desenvolvimento do câncer de mama em mulheres após a menopausa (Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.8).
+- O sedentarismo é um fator que afeta negativamente a saúde física, ao lado da má alimentação, tabagismo e consumo de drogas ou bebidas alcoólicas [Fonte: Cartilha saúde emocional.pdf, pag.4].
+- Estudos mostram que o sedentarismo foi responsável por gastos significativos em custos médicos, destacando a necessidade de combate a essa prática na agenda de saúde pública [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.51].
+- O sedentarismo está associado a uma série de doenças crônicas, incluindo obesidade, hipertensão e doenças cardiovasculares, além de afetar o bem-estar geral, como disposição e energia [Fonte: Cartilha hábitos saudáveis.pdf, pag.7].
+- Atividades físicas simples, como andar, podem ajudar a combater o sedentarismo e melhorar a saúde em geral [Fonte: Cartilha hábitos saudáveis.pdf, pag.7].
 
-5. **Saúde Oral**: A obesidade pode aumentar o risco de doenças periodontais (Fonte: Cartilha Saúde Bucal.pdf, pag.3).
+Estas informações indicam que o sedentarismo é um fator de risco significativo para várias condições de saúde e deve ser priorizado na promoção da saúde pública.","O sedentarismo aumenta o risco de obesidade, diabetes tipo 2, doenças cardiovasculares e alguns tipos de câncer.",0.8,0.8,0.8,0.8,15.66
+Qual é a periodicidade recomendada para consultas preventivas em adultos?,"Não encontrei informações específicas sobre a periodicidade recomendada para consultas preventivas em adultos nos trechos fornecidos. Os trechos abordam temas relacionados a visitas domiciliares, exames de prevenção do câncer cervical, revisões periódicas da prescrição de medicamentos e rastreamento, mas não apresentam uma periodicidade geral para consultas preventivas em adultos.
 
-6. **Envelhecimento Saudável**: Atividades físicas regulares podem melhorar a saúde mental e promover independência em idosos, além de reduzir o risco de quedas (Fonte: Cartilha envelhecimento saudável.pdf, pag.7).
+Fonte: [Trechos 1-8 - doencas_cronicas_cab35.pdf, rastreamento_cancer_colo_utero.pdf, 2197-UN-CARTILHA-CUIDADOS COM MEDICAMENTOS V3_compressed.pdf, promocao_saude_prevencao_riscos_doencas.pdf, rastreamento_cap29.pdf, CARTILHA PERSONAL ODONTO - V4.pdf]","Adultos saudáveis devem realizar consultas preventivas anuais para monitoramento de pressão, peso e exames de rotina.",0.0,0.0,0.3,0.0,9.32
+Quais são os sintomas de alerta para câncer do colo do útero?,"Não encontrei informações específicas sobre os sintomas de alerta para o câncer do colo do útero nos trechos fornecidos. No entanto, posso resumir algumas informações relevantes que foram mencionadas:
 
-7. **Câncer Geral**: O sedentarismo é um fator de risco para vários tipos de câncer, incluindo o do mama em mulheres após a menopausa (Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.8).
+- O exame preventivo (colpocitológico) é importante para detectar alterações nas células do colo do útero antes de aparecerem lesões ou sintomas.
+- A maioria dos casos de câncer do colo do útero é diagnosticada no estádio I, o que sugere a importância da realização regular desse exame.
 
-8. **Saúde Geral**: Além disso, o sedentarismo está associado à má alimentação e ao tabagismo, que são outros fatores de risco para várias doenças (Fonte: Cartilha saúde emocional.pdf, pag.4).
+Fontes: [Cartilha_Cancer_Mama_2025_web_161025.pdf, pag. 6] e [ExamesPreventivos.pdf, pag. 18]
 
-9. **Prevenção do Câncer**: Práticas saudáveis como uma dieta equilibrada e atividades físicas regulares podem reduzir a incidência de câncer em geral (Fonte: ExamesPreventivos.pdf, pag.6).
+Para obter informações mais detalhadas sobre os sintomas de alerta para o câncer do colo do útero, seria necessário consultar fontes médicas específicas ou guias clínicos atualizados.","Sangramento vaginal anormal, corrimento com odor e dor pélvica podem ser sintomas de câncer do colo do útero.",0.8,0.8,0.8,0.8,10.72
+A vacina HPV previne o câncer do colo do útero?,"Sim, a vacina HPV previne o câncer do colo do útero, mas não protege contra todos os tipos de HPV que podem causar esse tipo de câncer.
 
-10. **Fatores de Risco para Doenças Crônicas**: O sedentarismo é um dos fatores de risco para várias doenças crônicas, incluindo obesidade, diabetes e doenças cardíacas (Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.18).
+[Fonte: Cartilha_saude_mulher.pdf, pag.19] A vacina protege contra cepas (tipos) de alto risco de HPV que podem causar câncer de colo de útero.
 
-Em resumo, o sedentarismo está fortemente relacionado a uma série de problemas de saúde, desde doenças crônicas até câncer, e é crucial adotar um estilo de vida mais ativo para prevenir esses riscos.
+No entanto, é importante que as mulheres continuem realizando exames preventivos regulares, como o Papanicolaou, mesmo após a vacinação. Isso porque a vacina não protege contra todos os subtipos oncogênicos do HPV.
 
-[Fonte: CARTILHA OBESIDADE VersãoD.pdf, pag.2; Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.8; hipertensao_cab37.pdf, pag.99; ExamesPreventivos.pdf, pag.6; promocao_saude_prevencao_riscos_doencas.pdf, pag.18]","O sedentarismo aumenta o risco de obesidade, diabetes tipo 2, doenças cardiovasculares e alguns tipos de câncer.",0.8,0.6,0.6,0.8,30.25
-Qual é a periodicidade recomendada para consultas preventivas em adultos?,"Na faixa etária de 25 a 59 anos, é recomendada a realização periódica do exame colpocitológico (Papanicolau), com uma frequência inicial anual. Se dois resultados normais seguidos forem obtidos, o intervalo pode ser aumentado para cada três anos.
+[Fonte: boletim_cancer_colo_utero_2023.pdf, pag.6]
 
-[Fonte: ExamesPreventivos.pdf, pag.7]","Adultos saudáveis devem realizar consultas preventivas anuais para monitoramento de pressão, peso e exames de rotina.",0.0,0.8,0.3,0.0,4.16
-Quais são os sintomas de alerta para câncer do colo do útero?,"Não encontrei informações específicas sobre os sintomas de alerta para câncer do colo do útero nos trechos fornecidos. Os trechos disponíveis parecem se concentrar mais em outros tipos de câncer, como o câncer de mama e detalhes sobre exames preventivos.
+Além disso, o uso de preservativos pode reduzir em até 70% a transmissão do HPV durante as relações sexuais.
 
-No entanto, é importante mencionar que os sintomas de alerta para câncer do colo do útero podem incluir:
+[Fonte: Cartilha_saude_mulher.pdf, pag.19]","Sim, a vacina HPV protege contra os tipos 16 e 18 do HPV, responsáveis por cerca de 70% dos casos de câncer do colo.",0.8,1.0,0.8,0.8,10.84
+Quais alimentos devem ser evitados para prevenir hipertensão?,"Não encontrei informações específicas sobre alimentos a serem evitados para prevenir a hipertensão nos trechos fornecidos. No entanto, os trechos indicam que o consumo excessivo de sal e alimentos gordurosos são fatores importantes a serem considerados na prevenção da hipertensão.
 
-- Sangramento anormal entre períodos menstruais
-- Sangramento após relações sexuais
-- Dor na região pélvica
+Fonte: [Trecho 2 - hipertensao.pdf, pag.1]","Alimentos ricos em sódio, como embutidos, enlatados e fast food, devem ser evitados para controle da pressão arterial.",0.8,0.8,0.8,0.8,4.93
+Exercício físico reduz o risco de câncer?,"Sim, o exercício físico reduz o risco de câncer de mama. De acordo com a Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.9, manter um peso corporal adequado e praticar atividade física são fatores que ajudam na redução do risco deste tipo de câncer.
 
-Estes sintomas não são necessariamente indicativos de câncer, mas devem ser avaliados por um profissional médico. A detecção precoce é fundamental para o tratamento eficaz.
+[Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.9]","Sim, a atividade física regular está associada à redução do risco de câncer de mama, cólon e outros tipos.",0.8,0.8,0.8,0.8,5.89
+Como o excesso de peso influencia o risco de doenças crônicas?,"O excesso de peso influencia significativamente o risco de desenvolver várias doenças crônicas. Segundo os trechos fornecidos:
 
-[Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.105]","Sangramento vaginal anormal, corrimento com odor e dor pélvica podem ser sintomas de câncer do colo do útero.",0.3,0.8,0.8,0.0,7.75
-A vacina HPV previne o câncer do colo do útero?,"Sim, a vacina HPV previne o câncer do colo do útero. De acordo com os trechos fornecidos:
+- O consumo excessivo de gorduras, especialmente as saturadas, aumenta o risco de doenças do coração e outras condições crônicas [Fonte: guia_alimentar_populacao_brasileira_2ed.pdf, pag.82].
 
-- A vacina protege contra cepas de alto risco de HPV que podem causar câncer de colo do útero [Fonte: Cartilha_saude_mulher.pdf, pag.19].
-- A prevenção primária do câncer do colo do útero está relacionada à diminuição do risco de contágio pelo papilomavírus humano (HPV) [Fonte: Cartilha saúde da mulher.pdf, pag.8].
-- A vacinação profilática junto à utilização de preservativos durante a relação sexual pode ajudar na prevenção primária do câncer do colo uterino [Fonte: Cartilha - Exames Preventivos do Câncer de Colo do Útero.pdf, pag.4].
-- A vacina não previne infecções causadas por todos os tipos de HPV, mas protege dos principais tipos causadores do câncer do colo de útero [Fonte: boletim_cancer_colo_utero_2023.pdf, pag.6].
+- Adultos com excesso de peso têm maior probabilidade de desenvolver doenças como diabetes tipo 2, hipercolesterolemia, hipertensão arterial e problemas ortopédicos [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.42].
 
-Portanto, a vacina HPV é uma ferramenta importante na prevenção do câncer do colo do útero, embora seja necessário continuar realizando exames preventivos mesmo após a vacinação.
+- Adolescentes com excesso de peso têm um risco aumentado de 70% para desenvolver outras doenças crônicas relacionadas ao consumo excessivo de calorias e à oferta desequilibrada de nutrientes [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.42].
 
-[Não foram encontradas informações específicas sobre faixa etária ou frequência de aplicação da vacina no texto fornecido.]","Sim, a vacina HPV protege contra os tipos 16 e 18 do HPV, responsáveis por cerca de 70% dos casos de câncer do colo.",1.0,1.0,0.9,0.8,13.25
-Quais alimentos devem ser evitados para prevenir hipertensão?,"Nao encontrei informações específicas sobre alimentos que devem ser evitados para prevenir a hipertensão nos trechos fornecidos.
+- Problemas de alimentação em todas as idades incluem tanto a desnutrição quanto o consumo excessivo de calorias, que podem levar ao desenvolvimento de doenças crônicas [Fonte: Cartilha envelhecimento saudável.pdf, pag.7].
 
-No entanto, há algumas recomendações gerais relacionadas à alimentação e estilo de vida que podem auxiliar na prevenção da hipertensão:
+- A ingestão excessiva de alimentos está associada a um maior depósito de gorduras e maior ingestão de sal, o que pode contribuir para doenças do coração e obesidade [Fonte: hipertensao_cab37.pdf, pag.89].
 
-- Reduzir o consumo de sal [Fonte: Cartilha_saude_mulher.pdf, pag.22]
-- Consumir uma alimentação saudável [Fonte: Cartilha_saude_mulher.pdf, pag.22]
+- O excesso de peso é mais frequente em adultos até os 54 anos para homens e até os 64 anos para mulheres, com variações na frequência dependendo do nível de escolaridade [Fonte: promocao_saude_prevencao_riscos_doencas.pdf, pag.47].
 
-É importante notar que os trechos fornecidos não detalham especificamente quais alimentos devem ser evitados para a prevenção da hipertensão.","Alimentos ricos em sódio, como embutidos, enlatados e fast food, devem ser evitados para controle da pressão arterial.",0.8,0.8,0.4,0.0,6.86
-Exercício físico reduz o risco de câncer?,"Sim, o exercício físico reduz o risco de câncer de mama e de próstata, além de trazer diversos benefícios para a saúde geral.
+- A adequação do consumo energético é crucial para reduzir o peso quando necessário e prevenir doenças crônicas relacionadas ao excesso de peso [Fonte: guia_alimentar_populacao_brasileira_2ed.pdf, pag.38].","O excesso de peso aumenta o risco de diabetes tipo 2, hipertensão, doenças cardiovasculares e alguns cânceres.",0.8,0.8,0.8,0.8,21.97
+Qual a importância do diagnóstico precoce no câncer de mama?,"A importância do diagnóstico precoce no câncer de mama é fundamental para o sucesso do tratamento e a redução da mortalidade associada à doença. Segundo os trechos fornecidos, algumas informações relevantes são:
 
-- A prática regular de atividade física pode reduzir em até 28% o risco de desenvolvimento do câncer de mama. [Fonte: Cartilha Saúde da Mulher, pag.6]
-- Manter um peso corporal adequado e evitar obesidade também são fatores importantes para a prevenção.
-- Sobrepeso e obesidade aumentam o risco de câncer de próstata em homens com peso corporal mais elevado. [Fonte: Próstata, pag.3]
+- O rastreamento mamográfico tem demonstrado eficácia ao longo do tempo pela redução da mortalidade pelo câncer de mama [Fonte: ExamesPreventivos.pdf, pag.8].
 
-Além disso, a atividade física regular tem efeitos preventivos importantes para doenças cardiovasculares e pode ajudar na independência das pessoas idosas, além de reduzir o risco de quedas. [Fonte: Cartilha Envelhecimento Saudável, pag.7]
+- A detecção precoce é crucial para aumentar as chances de tratamento e cura [Fonte: Cartilha-da-saúde-da-mulher-2.pdf, pag.3; Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.7].
 
-Não fumar e evitar tabagismo passivo também contribuem para a prevenção do câncer de mama. [Fonte: Cartilha Cancer Mama 2025 Web, pag.9]
+- A mamografia pode detectar o câncer precocemente, antes de ele se tornar palpável [Fonte: ExamesPreventivos.pdf, pag.8].
 
-A não prática de exercícios físicos (sedentarismo) é associada a diversos riscos à saúde, incluindo obesidade, hipertensão, doenças cardiovasculares e diabetes. [Fonte: Cartilha Hábitos Saudáveis, pag.7]","Sim, a atividade física regular está associada à redução do risco de câncer de mama, cólon e outros tipos.",0.8,1.0,0.8,0.8,13.88
-Como o excesso de peso influencia o risco de doenças crônicas?,"O excesso de peso e a obesidade estão fortemente associados ao aumento do risco de diversas doenças crônicas. De acordo com os trechos fornecidos, o sobrepeso e a obesidade aumentam o risco de câncer de próstata em homens [Fonte: grupo de risco - Próstata.pdf, pag.3]. Além disso, há uma relação estreita entre o excesso de gordura corporal e o aparecimento e complicações de outras doenças crônicas como diabetes, hipertensão arterial e doenças cardíacas [Fonte: CARTILHA OBESIDADE VersãoD.pdf, pag.2].
+- O diagnóstico precoce é importante para evitar tratamentos mais agressivos e aumentar as chances de cura [Fonte: Cartilha-da-saúde-da-mulher-2.pdf, pag.3].
 
-A alimentação inadequada está associada a um maior risco cardiovascular e pode contribuir para o aumento do sobrepeso corporal, que por sua vez é um fator de risco para doenças crônicas [Fonte: doencas_cronicas_cab35.pdf, pag.61]. A hipertensão arterial também está entre as condições crônicas prevalentes e pode ser influenciada pelo estilo de vida, incluindo a alimentação [Fonte: rastreamento_cap29.pdf, pag.50].
+- A detecção precoce do câncer de mama pode ser feita através da realização regular de exames preventivos, como a mamografia e o papanicolau [Fonte: Cartilha-da-saúde-da-mulher-2.pdf, pag.3; Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.7].
 
-A ingestão excessiva de calorias, especialmente em alimentos ultraprocessados, é um fator importante no aumento do risco de obesidade e doenças crônicas [Fonte: guia_alimentar_populacao_brasileira_2ed.pdf, pag.43]. O consumo em grande quantidade e frequência de álcool também pode ser prejudicial para pessoas com diabetes ou hipertensão, além de interferir na manutenção do peso corporal [Fonte: doencas_cronicas_cab35.pdf, pag.65].
+- É importante que as mulheres conheçam bem seu corpo e estejam atentas a quaisquer mudanças nas mamas [Fonte: Cartilha-da-saúde-da-mulher-2.pdf, pag.3; Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.7].
 
-Estes trechos indicam que o excesso de peso e a obesidade são fatores de risco significativos para várias doenças crônicas, destacando a importância da alimentação adequada e da atividade física regular na prevenção dessas condições.","O excesso de peso aumenta o risco de diabetes tipo 2, hipertensão, doenças cardiovasculares e alguns cânceres.",0.8,1.0,0.8,0.8,19.25
-Qual a importância do diagnóstico precoce no câncer de mama?,"A importância do diagnóstico precoce no câncer de mama é fundamental para melhorar as chances de cura e reduzir a mortalidade associada à doença. Segundo os trechos fornecidos, há evidências claras sobre o benefício do rastreamento por meio da mamografia:
+- A detecção precoce do câncer de mama é uma estratégia importante para a saúde pública [Fonte: controle_canceres_utero_mama.pdf, pag.17; Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.14].
 
-1. **Redução da Mortalidade**: A mamografia de rastreamento, combinada com acesso ágil ao tratamento, reduz a mortalidade por câncer de mama [Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag. 14].
+- O diagnóstico precoce pode evitar resultados falsos-negativos na mamografia, que podem levar a um atraso no diagnóstico [Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag.14].
 
-2. **Menor Agressividade do Tratamento**: Encontrar um câncer no início permite um tratamento menos agressivo e menor chance de morrer por câncer de mama, em função do tratamento precoce [Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag. 14].
-
-3. **População-Alvo**: O rastreamento para câncer de mama deve ser direcionado para mulheres na faixa etária de maior risco, que geralmente é entre 50 e 74 anos [Fonte: Cartilha_Cancer_Mama_2025_web_161025.pdf, pag. 72].
-
-4. **Cobertura**: É recomendável uma cobertura de 80% da população alvo para exames preventivos do câncer de colo do útero e mama [Fonte: ExamesPreventivos.pdf, pag. 18].
-
-5. **Frequência**: Recomenda-se o rastreamento de câncer de mama bianual por meio de mamografia para mulheres entre 50 e 74 anos [Fonte: rastreamento_cancer_colo_utero.pdf, pag. 62; Cartilha_Cancer_Mama_2025_web_161025.pdf, pag. 72].
-
-Essas informações ressaltam a importância do diagnóstico precoce no câncer de mama e a necessidade de implementar estratégias eficazes de rastreamento para reduzir as taxas de mortalidade associadas à doença.","O diagnóstico precoce aumenta significativamente as chances de cura, com taxas de sobrevivência acima de 90% em estágios iniciais.",0.8,1.0,0.85,0.8,21.92
+[Fontes: rastreamento_cap29.pdf, ExamesPreventivos.pdf, Cartilha-da-saúde-da-mulher-2.pdf, Cartilha_Cancer_Mama_2025_web_161025.pdf, controle_canceres_utero_mama.pdf, boletim_cancer_colo_utero_2023.pdf, promocao_saude_prevencao_riscos_doencas.pdf]","O diagnóstico precoce aumenta significativamente as chances de cura, com taxas de sobrevivência acima de 90% em estágios iniciais.",0.95,1.0,0.8,0.8,29.25

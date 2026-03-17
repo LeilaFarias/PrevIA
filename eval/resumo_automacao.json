@@ -2,6 +2,6 @@
   "n_tarefas": 5,
   "taxa_sucesso": 1.0,
   "steps_medio": 4.0,
-  "docs_medio": 15.0,
-  "latencia_media_s": 54.15
+  "docs_medio": 15.2,
+  "latencia_media_s": 62.26
 }

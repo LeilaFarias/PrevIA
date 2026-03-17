@@ -53,11 +53,11 @@ Resposta Final
 
 ---
 
-## 🗂️ Corpus RAG — 39 documentos públicos
+## 🗂️ Corpus RAG — 38 documentos públicos
 
 | Categoria | Documentos |
 |-----------|-----------|
-| Rastreamento e câncer | 10 |
+| Rastreamento e câncer | 9 |
 | Doenças crônicas e atenção básica | 10 |
 | Saúde da mulher e gestação | 4 |
 | Vacinação (calendários nacionais) | 5 |
@@ -106,15 +106,15 @@ Fontes: Ministério da Saúde, INCA, OMS — todos documentos públicos.
  
 | Métrica | Valor | Interpretação |
 |---------|-------|---------------|
-| Faithfulness | 0.588 | Respostas fiéis ao contexto na maioria dos casos |
-| Answer Relevancy | 0.830 | Respostas altamente relevantes às perguntas |
-| Context Precision | 0.645 | Retriever encontra documentos relevantes |
-| Context Recall | 0.520 | Corpus cobre bem as respostas esperadas |
-| **Latência média** | **10.9s** | Modelo local sem GPU dedicada |
+| Faithfulness | 0.740 | Respostas fiéis ao contexto na maioria dos casos |
+| Answer Relevancy | 0.750 | Respostas altamente relevantes às perguntas |
+| Context Precision | 0.677 | Retriever encontra documentos relevantes |
+| Context Recall | 0.600 | Corpus cobre bem as respostas esperadas |
+| **Latência média** | **11.7s** | Modelo local sem GPU dedicada |
  
-15 de 20 perguntas com score ≥ 0.8 em Answer Relevancy. 
+15 de 20 perguntas com score ≥ 0.7 em Answer Relevancy. 
  
-> Métricas calculadas com Qwen2.5 7B + embedding `neuralmind/bert-base-portuguese-cased` seguindo metodologia RAGAS.
+> Métricas calculadas com Qwen2.5 7B + embedding `BAAI/bge-small-en-v1.5` seguindo metodologia RAGAS.
 
 ### Automação MCP — 5 tarefas
  
@@ -152,7 +152,7 @@ Fontes: Ministério da Saúde, INCA, OMS — todos documentos públicos.
 | Componente | Tecnologia |
 |------------|-----------|
 | LLM | Qwen2.5 7B via Ollama (local) |
-| Embeddings | neuralmind/bert-base-portuguese-cased |
+| Embeddings | BAAI/bge-small-en-v1.5 |
 | Busca vetorial | FAISS |
 | Orquestração | LangGraph + LangChain |
 | Interface | Streamlit + ngrok |
@@ -216,6 +216,7 @@ previa/
 - Implementar reranking dos documentos recuperados
 - Avaliar modelos maiores (13B+) para maior fidelidade
 - Deploy permanente com Docker + cloud
+- MCP de nutrição
 
 ---
 
